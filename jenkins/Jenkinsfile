@@ -1,7 +1,7 @@
-pipeline {
+0pipeline {
 	environment {
-EMAIL_TO = 'tejatec27@gmail.com'
-EMAIL_FROM = 'b.rams@yahoo.com'
+EMAIL_TO = '20ne1a05g8@gmail.com'
+EMAIL_FROM = 'abhishekvanama@yahoo.com'
 }
 	
 	
