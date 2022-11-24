@@ -1,4 +1,4 @@
-0pipeline {
+pipeline {
 	environment {
 EMAIL_TO = '20ne1a05g8@gmail.com'
 EMAIL_FROM = 'abhishekvanama@yahoo.com'
