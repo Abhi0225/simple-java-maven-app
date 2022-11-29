@@ -16,14 +16,14 @@ EMAIL_FROM = 'abhishekvanama@yahoo.com'
         
         stage('ExecuteSonarQubeReport'){
             steps{
-                sh  "mvn clean sonar:sonar"
+                bat  "mvn clean sonar:sonar"
             }
         }    
 	       
 	    
         stage('Test') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
             post {
                 always {
@@ -33,7 +33,7 @@ EMAIL_FROM = 'abhishekvanama@yahoo.com'
         }
         stage('Deliver') {
             steps {
-                sh './jenkins/scripts/deliver.sh'
+                bat './jenkins/scripts/deliver.sh'
             }
         }
     }
