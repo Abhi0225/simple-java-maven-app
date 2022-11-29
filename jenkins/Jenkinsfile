@@ -33,7 +33,7 @@ EMAIL_FROM = 'abhishekvanama@yahoo.com'
         }
         stage('Deliver') {
             steps {
-                bat './jenkins/scripts/deliver.sh'
+                bat './jenkins/scripts/deliver.bat'
             }
         }
     }
@@ -50,17 +50,17 @@ always{
  }
 /* 
 success{
- emailext to: 'b.rams17011983@gmail.com',
+ emailext to: '20ne1a05g8@gmail.com',
           subject: "Pipeline Build is over .. Build # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
           body: "Pipeline Build is over .. Build # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
-          replyTo: 'b.rams17011983@gmail.com'
+          replyTo: '20ne1a05g8@gmail.com'
  }
  
  failure{
- emailext to: 'b.rams17011983@gmail.com',
+ emailext to: '20ne1a05g8@gmail.com',
           subject: "Pipeline Build is over .. Build # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
           body: "Pipeline Build is over .. Build # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
-          replyTo: 'b.rams17011983@gmail.com'
+          replyTo: '20ne1a05g8@gmail.com'
  }*/
  
 }
